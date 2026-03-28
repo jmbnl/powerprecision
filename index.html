@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PowerPrecision — Krachttraining coaching</title>
-  <meta name="description" content="PowerPrecision helpt serieuze sporters sterker worden met coaching op krachttraining en SBD.." />
+  <title>PowerPrecision — Coaching voor serieuze lifters</title>
+  <meta name="description" content="PowerPrecision biedt coaching voor sporters die sterker willen worden in krachttraining en SBD." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,226 +13,223 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
+    :root {
+      --pp-purple: #4b1592;
+      --pp-purple-dark: #2b085a;
+      --pp-white: #f6f3f8;
+      --pp-black: #06030b;
+    }
+
     body {
-      background:
-        radial-gradient(circle at top left, rgba(168,85,247,0.18), transparent 28%),
-        radial-gradient(circle at top right, rgba(239,68,68,0.14), transparent 24%),
-        #0a0a0f;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--pp-black);
+      color: var(--pp-white);
+    }
+
+    .poster-title {
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      text-transform: uppercase;
+    }
+
+    .poster-subtitle {
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
     }
   </style>
 </head>
-<body class="bg-neutral-950 text-white selection:bg-purple-500/40">
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
+<body class="bg-[var(--pp-black)] text-[var(--pp-white)]">
+  <header class="sticky top-0 z-50 border-b-4 border-[var(--pp-purple)] bg-[var(--pp-black)]">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-      <a href="#top" class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10 text-lg font-black tracking-tight text-white">PP</div>
+      <a href="#top" class="flex items-center gap-4">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full border-4 border-[var(--pp-purple)] text-lg font-black text-white">PP</div>
         <div>
-          <div class="text-lg font-bold tracking-tight">PowerPrecision</div>
-          <div class="text-xs uppercase tracking-[0.2em] text-neutral-400">Strength Coaching</div>
+          <div class="text-2xl font-black uppercase tracking-tight">PowerPrecision</div>
+          <div class="text-xs font-bold uppercase tracking-[0.28em] text-neutral-300">Coaching</div>
         </div>
       </a>
 
-      <div class="hidden items-center gap-8 text-sm text-neutral-300 md:flex">
-        <a href="#over" class="transition hover:text-white">Over</a>
-        <a href="#aanpak" class="transition hover:text-white">Aanpak</a>
-        <a href="#voor-wie" class="transition hover:text-white">Voor wie</a>
-        <a href="#contact" class="transition hover:text-white">Contact</a>
+      <div class="hidden items-center gap-8 text-sm font-bold uppercase tracking-[0.2em] md:flex">
+        <a href="#over" class="hover:text-white">Over</a>
+        <a href="#coaching" class="hover:text-white">Coaching</a>
+        <a href="#voor-wie" class="hover:text-white">Voor wie</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
       </div>
 
-      <a href="#contact" class="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-neutral-200">
-        Maak een afspraak
+      <a href="#contact" class="border-4 border-white bg-white px-4 py-2 text-sm font-black uppercase text-[var(--pp-purple)] transition hover:bg-transparent hover:text-white">
+        DM ons
       </a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:py-28 lg:grid-cols-2">
-      <div>
-        <div class="mb-6 inline-flex items-center rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm text-purple-200">
-          Coaching voor serieuze lifters..
+    <section class="bg-[var(--pp-purple)] px-6 py-20 md:py-28">
+      <div class="mx-auto max-w-6xl text-center">
+        <div class="mx-auto mb-10 flex w-fit items-center justify-center border-4 border-white bg-white px-6 py-4 text-[var(--pp-purple)]">
+          <div class="text-2xl font-black uppercase tracking-tight md:text-4xl">PowerPrecision</div>
         </div>
-        <h1 class="max-w-3xl text-5xl font-black leading-none tracking-tight sm:text-6xl xl:text-7xl">
-          Train harder.<br />
-          Get stronger.
+
+        <p class="mb-6 text-sm font-black uppercase tracking-[0.35em] text-white/80">Coaching voor serieuze lifters</p>
+
+        <h1 class="poster-title mx-auto max-w-5xl text-6xl text-white sm:text-7xl md:text-8xl xl:text-[8rem]">
+          Meer winst<br />
+          uit je training.
         </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-neutral-300 sm:text-xl">
-          PowerPrecision is er voor sporters die gericht sterker willen worden in krachttraining en SBD.
-          Geen onzin, geen vage schema’s — gewoon scherpe coaching, techniek en progressie.
+
+        <p class="mx-auto mt-8 max-w-3xl text-xl font-bold leading-8 text-white/90 md:text-2xl">
+          Sterker worden in krachttraining en SBD. Geen bullshit. Wel structuur, techniek en progressie.
         </p>
 
-        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a href="#contact" class="rounded-2xl bg-purple-600 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-purple-500">
-            Plan een kennismaking
+        <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+          <a href="#contact" class="border-4 border-white bg-white px-8 py-4 text-base font-black uppercase text-[var(--pp-purple)] transition hover:bg-transparent hover:text-white">
+            Start coaching
           </a>
-          <a href="#aanpak" class="rounded-2xl border border-white/15 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/5">
-            Bekijk de aanpak
+          <a href="#coaching" class="border-4 border-white px-8 py-4 text-base font-black uppercase text-white transition hover:bg-white hover:text-[var(--pp-purple)]">
+            Bekijk meer
           </a>
         </div>
-
-        <div class="mt-12 grid max-w-xl grid-cols-3 gap-4 text-sm">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div class="text-2xl font-black">1-op-1</div>
-            <div class="mt-1 text-neutral-400">Persoonlijke coaching</div>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div class="text-2xl font-black">SBD</div>
-            <div class="mt-1 text-neutral-400">Focus op kracht</div>
-          </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div class="text-2xl font-black">Focus</div>
-            <div class="mt-1 text-neutral-400">Techniek & progressie</div>
-          </div>
-        </div>
       </div>
+    </section>
 
-      <div class="relative">
-        <div class="absolute -left-8 top-8 h-40 w-40 rounded-full bg-purple-600/20 blur-3xl"></div>
-        <div class="absolute -right-8 bottom-0 h-40 w-40 rounded-full bg-red-500/20 blur-3xl"></div>
-        <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 shadow-2xl shadow-black/40">
-          <div class="mb-6 flex items-center justify-between">
-            <div>
-              <p class="text-sm uppercase tracking-[0.25em] text-neutral-400">PowerPrecision</p>
-              <h2 class="mt-2 text-2xl font-bold">Strength starts with structure.</h2>
-            </div>
-            <div class="rounded-2xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-neutral-300">Dark mode</div>
+    <section id="over" class="bg-[var(--pp-white)] px-6 py-20 text-[var(--pp-purple)]">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em]">Over PowerPrecision</p>
+        <h2 class="poster-title max-w-4xl text-5xl sm:text-6xl md:text-7xl">
+          Twee coaches.<br />
+          Eén missie.
+        </h2>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="border-4 border-[var(--pp-purple)] bg-white p-6">
+            <h3 class="text-2xl font-black uppercase">Yannick & Sam</h3>
+            <p class="mt-4 text-lg font-bold leading-8">
+              Twee jonge ondernemers en sporters die jongeren helpen om slimmer en sterker te trainen.
+            </p>
           </div>
-
-          <div class="space-y-4">
-            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
-              <div class="text-sm text-neutral-400">Wat je kunt verwachten</div>
-              <div class="mt-3 text-lg font-semibold">Gerichte coaching op schema, uitvoering en resultaat</div>
-            </div>
-            <div class="grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
-                <div class="text-sm text-neutral-400">Coaching</div>
-                <div class="mt-2 text-lg font-bold">Persoonlijk</div>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
-                <div class="text-sm text-neutral-400">Doel</div>
-                <div class="mt-2 text-lg font-bold">Sterker worden</div>
-              </div>
-            </div>
-            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
-              <div class="flex items-center justify-between text-sm text-neutral-400">
-                <span>Powerlifting / SBD focus</span>
-                <span>Progressive overload</span>
-              </div>
-              <div class="mt-4 h-3 overflow-hidden rounded-full bg-white/10">
-                <div class="h-full w-4/5 rounded-full bg-gradient-to-r from-purple-500 to-red-500"></div>
-              </div>
-            </div>
+          <div class="border-4 border-[var(--pp-purple)] bg-white p-6">
+            <h3 class="text-2xl font-black uppercase">Geen onzin</h3>
+            <p class="mt-4 text-lg font-bold leading-8">
+              Geen vage schema’s en geen loze praat. Gewoon duidelijke coaching en gerichte feedback.
+            </p>
+          </div>
+          <div class="border-4 border-[var(--pp-purple)] bg-white p-6">
+            <h3 class="text-2xl font-black uppercase">Wel progressie</h3>
+            <p class="mt-4 text-lg font-bold leading-8">
+              De focus ligt op sterker worden, beter bewegen en structureel resultaat boeken.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="over" class="mx-auto max-w-7xl px-6 py-8">
-      <div class="grid gap-6 md:grid-cols-3">
-        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <div class="text-sm uppercase tracking-[0.2em] text-purple-300">01</div>
-          <h3 class="mt-4 text-2xl font-bold">Twee jonge coaches</h3>
-          <p class="mt-4 leading-7 text-neutral-300">
-            Yannick en Sam zijn gedreven sporters die jongeren helpen om slimmer, sterker en consistenter te trainen.
-          </p>
-        </div>
-        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <div class="text-sm uppercase tracking-[0.2em] text-purple-300">02</div>
-          <h3 class="mt-4 text-2xl font-bold">Geen bullshit</h3>
-          <p class="mt-4 leading-7 text-neutral-300">
-            Geen loze motivatiepraat, maar duidelijke coaching, techniekfeedback en een plan dat bij jouw niveau past.
-          </p>
-        </div>
-        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <div class="text-sm uppercase tracking-[0.2em] text-purple-300">03</div>
-          <h3 class="mt-4 text-2xl font-bold">Gebouwd op progressie</h3>
-          <p class="mt-4 leading-7 text-neutral-300">
-            Elke sessie telt. De focus ligt op beter bewegen, sterker worden en gericht bouwen aan resultaat.
-          </p>
-        </div>
-      </div>
-    </section>
+    <section id="coaching" class="bg-[var(--pp-black)] px-6 py-20 text-white">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-white/70">Coaching</p>
+        <h2 class="poster-title max-w-5xl text-5xl sm:text-6xl md:text-7xl">
+          Waarmee helpen wij jou?
+        </h2>
 
-    <section id="aanpak" class="mx-auto max-w-7xl px-6 py-20">
-      <div class="grid items-start gap-10 lg:grid-cols-2">
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-purple-300">Aanpak</p>
-          <h2 class="mt-4 text-4xl font-black tracking-tight">Coaching die past bij serieuze krachttraining</h2>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-neutral-300">
-            Of je net begint of al langer traint: PowerPrecision helpt je om gestructureerd te werken aan kracht, techniek en vertrouwen onder de stang.
-          </p>
-        </div>
-
-        <div class="space-y-4">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-bold">Techniek & uitvoering</h3>
-            <p class="mt-2 text-neutral-300">Betere squat, bench en deadlift door scherpe feedback en aandacht voor detail.</p>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div class="border-4 border-[var(--pp-purple)] bg-[var(--pp-purple)] p-6">
+            <h3 class="text-2xl font-black uppercase">Techniek</h3>
+            <p class="mt-4 text-lg font-bold leading-8 text-white/90">Beter worden in squat, bench en deadlift.</p>
           </div>
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-bold">Slimme trainingsopbouw</h3>
-            <p class="mt-2 text-neutral-300">Niet zomaar hard werken, maar trainen met structuur en duidelijke opbouw.</p>
+          <div class="border-4 border-[var(--pp-purple)] bg-[var(--pp-purple)] p-6">
+            <h3 class="text-2xl font-black uppercase">Schema</h3>
+            <p class="mt-4 text-lg font-bold leading-8 text-white/90">Trainen met structuur in plaats van zomaar wat doen.</p>
           </div>
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-bold">Persoonlijke begeleiding</h3>
-            <p class="mt-2 text-neutral-300">Coaching afgestemd op jouw niveau, doelen en motivatie.</p>
+          <div class="border-4 border-[var(--pp-purple)] bg-[var(--pp-purple)] p-6">
+            <h3 class="text-2xl font-black uppercase">SBD</h3>
+            <p class="mt-4 text-lg font-bold leading-8 text-white/90">Gericht bouwen aan kracht binnen powerlifting.</p>
+          </div>
+          <div class="border-4 border-[var(--pp-purple)] bg-[var(--pp-purple)] p-6">
+            <h3 class="text-2xl font-black uppercase">Progressie</h3>
+            <p class="mt-4 text-lg font-bold leading-8 text-white/90">Meer winst uit je training door gerichte coaching.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="voor-wie" class="mx-auto max-w-7xl px-6 pb-20">
-      <div class="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8 md:p-12">
-        <div class="max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-purple-300">Voor wie</p>
-          <h2 class="mt-4 text-4xl font-black tracking-tight">Voor jongeren die serieus sterker willen worden</h2>
-          <p class="mt-6 text-lg leading-8 text-neutral-300">
-            PowerPrecision spreekt sporters aan die doelgericht willen trainen. Jong, ambitieus en klaar om echt werk te maken van krachttraining.
-          </p>
-        </div>
+    <section id="voor-wie" class="bg-[var(--pp-purple)] px-6 py-20 text-white">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-white/80">Voor wie</p>
+        <h2 class="poster-title max-w-5xl text-5xl sm:text-6xl md:text-7xl">
+          Voor sporters die serieus beter willen worden.
+        </h2>
 
-        <div class="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          <div class="rounded-2xl border border-white/10 bg-black/20 p-5">Beginnende lifters die een sterke basis willen leggen</div>
-          <div class="rounded-2xl border border-white/10 bg-black/20 p-5">Sporters die vastlopen in techniek of progressie</div>
-          <div class="rounded-2xl border border-white/10 bg-black/20 p-5">Lifters met focus op squat, bench en deadlift</div>
-          <div class="rounded-2xl border border-white/10 bg-black/20 p-5">Mensen die coaching willen zonder poespas</div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2">
+          <div class="border-4 border-white bg-transparent p-6 text-2xl font-black uppercase leading-tight">
+            Beginnende lifters die een sterke basis willen leggen
+          </div>
+          <div class="border-4 border-white bg-transparent p-6 text-2xl font-black uppercase leading-tight">
+            Sporters die vastlopen in techniek of progressie
+          </div>
+          <div class="border-4 border-white bg-transparent p-6 text-2xl font-black uppercase leading-tight">
+            Lifters met focus op squat, bench en deadlift
+          </div>
+          <div class="border-4 border-white bg-transparent p-6 text-2xl font-black uppercase leading-tight">
+            Mensen die coaching willen zonder poespas
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="mx-auto max-w-5xl px-6 pb-20">
-      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-10 text-center">
-        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-purple-300">PowerPrecision</p>
-        <blockquote class="mt-6 text-2xl font-medium leading-10 text-white sm:text-3xl sm:leading-[3rem]">
-          “Sterker worden begint niet met meer doen. Het begint met beter trainen.”
+    <section class="bg-[var(--pp-white)] px-6 py-20 text-[var(--pp-purple)]">
+      <div class="mx-auto max-w-5xl text-center">
+        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em]">PowerPrecision mindset</p>
+        <blockquote class="poster-subtitle text-4xl uppercase sm:text-5xl md:text-6xl lg:text-7xl">
+          Geen bullshit.<br />
+          Wel progressie.
         </blockquote>
       </div>
     </section>
 
-    <section id="contact" class="mx-auto max-w-4xl px-6 pb-24">
-      <div class="rounded-[2rem] border border-purple-500/20 bg-gradient-to-br from-purple-600/15 to-red-500/10 p-10 text-center">
-        <h2 class="text-4xl font-black tracking-tight">Klaar om serieus te trainen?</h2>
-        <p class="mx-auto mt-4 max-w-2xl text-lg leading-8 text-neutral-300">
-          Neem contact op voor een kennismaking en ontdek wat PowerPrecision voor jouw training kan betekenen.
+    <section id="contact" class="bg-[var(--pp-purple)] px-6 py-20 text-white">
+      <div class="mx-auto max-w-5xl text-center">
+        <p class="mb-4 text-sm font-black uppercase tracking-[0.35em] text-white/80">Interesse in coaching?</p>
+        <h2 class="poster-title text-5xl sm:text-6xl md:text-7xl">
+          Stuur een DM.
+        </h2>
+
+        <p class="mx-auto mt-8 max-w-3xl text-2xl font-black leading-10">
+          Klaar om meer winst uit je training te halen? Neem contact op en start met gerichte coaching.
         </p>
-        <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-          <a href="mailto:info@powerprecision.nl" class="rounded-2xl bg-white px-6 py-4 font-semibold text-black transition hover:bg-neutral-200">
-            Mail ons
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <a href="https://instagram.com/samski83kg" class="border-4 border-white bg-white p-6 text-[var(--pp-purple)] transition hover:bg-transparent hover:text-white">
+            <div class="text-sm font-black uppercase tracking-[0.3em]">Instagram</div>
+            <div class="mt-3 text-4xl font-black tracking-tight">@Samski83kg</div>
           </a>
-          <a href="#top" class="rounded-2xl border border-white/15 px-6 py-4 font-semibold text-white transition hover:bg-white/5">
-            Terug naar boven
+          <a href="https://instagram.com/powerprecisioncoaching" class="border-4 border-white bg-white p-6 text-[var(--pp-purple)] transition hover:bg-transparent hover:text-white">
+            <div class="text-sm font-black uppercase tracking-[0.3em]">Instagram</div>
+            <div class="mt-3 break-words text-3xl font-black tracking-tight md:text-4xl">@powerprecisioncoaching</div>
           </a>
         </div>
-        <p class="mt-6 text-sm text-neutral-400">Vervang het e-mailadres en eventuele socials nog even door de echte gegevens.</p>
+
+        <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+          <a href="mailto:info@powerprecision.nl" class="border-4 border-white px-8 py-4 text-base font-black uppercase text-white transition hover:bg-white hover:text-[var(--pp-purple)]">
+            Mail PowerPrecision
+          </a>
+          <a href="#top" class="border-4 border-white bg-white px-8 py-4 text-base font-black uppercase text-[var(--pp-purple)] transition hover:bg-transparent hover:text-white">
+            Naar boven
+          </a>
+        </div>
+
+        <p class="mt-8 text-sm font-bold text-white/70">Vervang links, mailadres en eventueel het logo nog even door de echte gegevens.</p>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-white/10 bg-neutral-950">
-    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-neutral-400 md:flex-row md:items-center md:justify-between">
-      <div>© 2026 PowerPrecision. All rights reserved.</div>
-      <div class="flex gap-6">
-        <a href="#over" class="hover:text-white">Over</a>
-        <a href="#aanpak" class="hover:text-white">Aanpak</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
+  <footer class="border-t-4 border-white bg-[var(--pp-black)] px-6 py-8 text-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm font-bold uppercase tracking-[0.18em] md:flex-row md:items-center md:justify-between">
+      <div>© 2026 PowerPrecision</div>
+      <div class="flex flex-wrap gap-6">
+        <a href="#over" class="hover:text-white/70">Over</a>
+        <a href="#coaching" class="hover:text-white/70">Coaching</a>
+        <a href="#voor-wie" class="hover:text-white/70">Voor wie</a>
+        <a href="#contact" class="hover:text-white/70">Contact</a>
       </div>
     </div>
   </footer>
