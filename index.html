@@ -30,7 +30,7 @@
       font-weight: 900;
       letter-spacing: -0.04em;
       line-height: 0.95;
-      text-transform: uercase;
+      text-transform: uppercase;
     }
 
     .poster-subtitle {
@@ -40,11 +40,15 @@
     }
   </style>
 </head>
-<body class="bg-[var(---black)] text-[var(--pp-white)]">
+<body class="bg-[var(--pp-black)] text-[var(--pp-white)]">
   <header class="sticky top-0 z-50 border-b-4 border-[var(--pp-purple)] bg-[var(--pp-black)]/90 backdrop-blur supports-[backdrop-filter]:bg-[var(--pp-black)]/80">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
       <a href="#top" class="flex items-center gap-3 text-white">
         <div class="flex h-12 w-12 items-center justify-center rounded-full border-4 border-[var(--pp-purple)] text-lg font-black">PP</div>
+        <div>
+          <div class="text-xl font-black uppercase tracking-tight sm:text-2xl">PowerPrecision</div>
+          <div class="text-[11px] font-bold uppercase tracking-[0.28em] text-neutral-300 sm:text-xs">Coaching</div>
+        </div>
       </a>
 
       <div class="hidden items-center gap-6 text-sm font-black uppercase tracking-[0.16em] text-white lg:flex">
@@ -55,7 +59,9 @@
       </div>
 
       <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-2xl border-2 border-white p-2 text-white lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-         <img src="images/logo.png" alt="PowerPrecision logo" class="h-16 sm:h-20 md:h-24" />
+        <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
       </button>
     </nav>
 
