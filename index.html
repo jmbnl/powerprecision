@@ -39,6 +39,33 @@
       letter-spacing: -0.03em;
       line-height: 1;
     }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(42px);
+      transition:
+        opacity 0.75s ease,
+        transform 0.75s ease;
+      will-change: opacity, transform;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal,
+      .reveal.active {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
 </head>
 <body class="bg-[var(--pp-black)] text-[var(--pp-white)]">
@@ -146,19 +173,19 @@
           </div>
 
           <div class="grid gap-6 md:grid-cols-3">
-            <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-6 shadow-lg shadow-[var(--pp-purple)]/10">
+            <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-6 shadow-lg shadow-[var(--pp-purple)]/10" data-delay="0">
               <h3 class="text-2xl font-black uppercase">Yannick & Sam</h3>
               <p class="mt-4 text-lg font-bold leading-8">
                 Twee jonge ondernemers en sporters die jongeren helpen om slimmer en sterker te trainen.
               </p>
             </div>
-            <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-6 shadow-lg shadow-[var(--pp-purple)]/10">
+            <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-6 shadow-lg shadow-[var(--pp-purple)]/10" data-delay="120">
               <h3 class="text-2xl font-black uppercase">Geen onzin</h3>
               <p class="mt-4 text-lg font-bold leading-8">
                 Geen vage schema’s en geen loze praat. Gewoon duidelijke coaching en gerichte feedback.
               </p>
             </div>
-            <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-6 shadow-lg shadow-[var(--pp-purple)]/10">
+            <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-6 shadow-lg shadow-[var(--pp-purple)]/10" data-delay="240">
               <h3 class="text-2xl font-black uppercase">Wel progressie</h3>
               <p class="mt-4 text-lg font-bold leading-8">
                 De focus ligt op sterker worden, beter bewegen en structureel resultaat boeken.
@@ -177,19 +204,19 @@
         </h2>
 
         <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1" data-delay="0">
             <h3 class="text-2xl font-black uppercase">Weekschema</h3>
             <p class="mt-4 text-lg font-bold leading-8 text-white/90">Wekelijks up to date schema.</p>
           </div>
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1" data-delay="120">
             <h3 class="text-2xl font-black uppercase">Contact</h3>
             <p class="mt-4 text-lg font-bold leading-8 text-white/90">Persoonlijk contact via whatsapp</p>
           </div>
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1" data-delay="240">
             <h3 class="text-2xl font-black uppercase">Feedback</h3>
             <p class="mt-4 text-lg font-bold leading-8 text-white/90">Techniek feedback na elke taining</p>
           </div>
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-gradient-to-b from-[var(--pp-purple)] to-[var(--pp-purple-dark)] p-6 shadow-xl shadow-[var(--pp-purple)]/20 transition hover:-translate-y-1" data-delay="360">
             <h3 class="text-2xl font-black uppercase">Wedstrijd</h3>
             <p class="mt-4 text-lg font-bold leading-8 text-white/90">Wedstrijd coaching</p>
           </div>
@@ -205,16 +232,16 @@
         </h2>
 
         <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          <div class="rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15">
+          <div class="reveal rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15" data-delay="0">
             Beginnende lifters die een sterke basis willen leggen
           </div>
-          <div class="rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15">
+          <div class="reveal rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15" data-delay="120">
             Sporters die vastlopen in techniek of progressie
           </div>
-          <div class="rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15">
+          <div class="reveal rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15" data-delay="240">
             Lifters met focus op squat, bench en deadlift
           </div>
-          <div class="rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15">
+          <div class="reveal rounded-2xl border-4 border-white bg-white/10 p-6 text-2xl font-black uppercase leading-tight backdrop-blur-sm transition hover:-translate-y-1 hover:bg-white/15" data-delay="360">
             Mensen die coaching willen zonder poespas
           </div>
         </div>
@@ -229,7 +256,7 @@
         </h2>
 
         <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-8 shadow-xl shadow-[var(--pp-purple)]/10 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-8 shadow-xl shadow-[var(--pp-purple)]/10 transition hover:-translate-y-1" data-delay="0">
             <div class="text-2xl tracking-[0.2em] text-[var(--pp-purple)]">★★★★★</div>
             <p class="mt-6 text-lg font-bold leading-8">
               Sinds ik coaching volg bij PowerPrecision train ik veel gerichter. Mijn techniek is beter geworden en ik maak eindelijk weer progressie op alle drie de lifts.
@@ -240,7 +267,7 @@
             </div>
           </div>
 
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-8 shadow-xl shadow-[var(--pp-purple)]/10 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-8 shadow-xl shadow-[var(--pp-purple)]/10 transition hover:-translate-y-1" data-delay="140">
             <div class="text-2xl tracking-[0.2em] text-[var(--pp-purple)]">★★★★★</div>
             <p class="mt-6 text-lg font-bold leading-8">
               Wat ik sterk vind is dat het niet alleen om een schema gaat. Je krijgt echt persoonlijke feedback, snelle reacties en duidelijke tips waar je meteen wat aan hebt.
@@ -251,7 +278,7 @@
             </div>
           </div>
 
-          <div class="rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-8 shadow-xl shadow-[var(--pp-purple)]/10 transition hover:-translate-y-1">
+          <div class="reveal rounded-2xl border-4 border-[var(--pp-purple)] bg-white p-8 shadow-xl shadow-[var(--pp-purple)]/10 transition hover:-translate-y-1" data-delay="280">
             <div class="text-2xl tracking-[0.2em] text-[var(--pp-purple)]">★★★★★</div>
             <p class="mt-6 text-lg font-bold leading-8">
               Door de coaching train ik met meer vertrouwen en veel meer structuur. Ik weet precies waar ik aan moet werken en dat maakt echt het verschil richting wedstrijden.
@@ -347,6 +374,31 @@
           toggleButton.setAttribute('aria-expanded', 'false');
         });
       });
+    }
+
+    const reveals = document.querySelectorAll('.reveal');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const delay = Number(entry.target.dataset.delay || 0);
+          setTimeout(() => {
+            entry.target.classList.add('active');
+          }, delay);
+
+          obs.unobserve(entry.target);
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      reveals.forEach((el) => observer.observe(el));
+    } else {
+      reveals.forEach((el) => el.classList.add('active'));
     }
   </script>
 </body>
